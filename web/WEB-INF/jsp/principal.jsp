@@ -4,7 +4,7 @@
     Author     : u35444
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsf/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +16,7 @@
     <label for="selecoes">Escolha uma seleção: </label>
     <select name="selecoes">
       <c:forEach items="${teams}" var="team">
-          <option value="${team.ID}">${team.SName}</option>
+          <option>${team.SName}</option>
       </c:forEach>
     </select> 
   </body>
