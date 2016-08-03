@@ -23,7 +23,7 @@ public class ActionPaginaPrincipal implements Action {
         
         ArrayOftTeamInfo teams =  fs.teams();
         
-        request.setAttribute("teams", teams);
+        request.setAttribute("teams", teams.getTTeamInfo());
         
         return "/WEB-INF/jsp/principal.jsp";
         

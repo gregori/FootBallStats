@@ -27,7 +27,7 @@ public class FrontController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
             
-            Action action = ActionFactory.getAction(request, "ActionListaContatos");
+            Action action = ActionFactory.getAction(request, "ActionPaginaPrincipal");
             
             try {
                 String view = action.execute(request, response);
